@@ -1,33 +1,3 @@
-/*img{
-    width: 350px;
-}
-.v img{
-    width: 235px;
-}
-.conteiner-reviews {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card {
-    width: 48%;
-    margin-bottom: 20px;
-    display: flex;
-}
-
-.card img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.card p {
-    flex: 1;
-    margin-left: 10px;
-}
-*/
-/* Стилизация основной страницы */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
@@ -75,12 +45,12 @@ section {
 
 /* Стилизация изображений в разделе с примерами работ */
 .item img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
+    width: 300px;
     margin: 10px;
 }
-
+.v img {
+    width: 235px;
+}
 /* Стилизация блока с отзывами */
 .conteiner-reviews {
     display: flex;

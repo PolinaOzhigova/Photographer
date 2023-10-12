@@ -10,8 +10,12 @@ body {
 h1, h2, h3 {
     color: #ffffff;
     text-transform: uppercase;
-    padding: 5px 100px 5px 100px;
+    padding: 5px;
+    margin: 10px;
     text-align: center;
+}
+.present-small h3, h2{
+    padding: 15px;
 }
 .presentation h3{
     text-transform: none;
@@ -57,12 +61,19 @@ nav a:hover{
     color: #679aff;
 }
 
+/* Стилизация разделов */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
 /* Стилизация блоков обо мне*/
 .presentation{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 35px;
 }
 .present-small{
     border: 1px solid #0253fa;
@@ -74,29 +85,32 @@ nav a:hover{
     padding: 10px 30px 10px;
 }
 
-/* Стилизация разделов */
-section {
-    padding: 20px;
-    margin: 20px 0;
-}
-
 /* Стилизация изображений*/
 img{
-    box-shadow: 12px 12px #0253fa;
+   /* box-shadow: 12px 12px #0253fa;*/
+   width: 300px;
+   margin: 10px;
 }
-.item img {
-    width: 300px;
-    margin: 10px;
-}
-.v img {
+.card img{
+    box-shadow: 12px 12px #ffffff;
     width: 235px;
+}
+
+/* Стилизация примеров работ*/
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+    width: 33%;
 }
 
 /* Стилизация блока с отзывами*/
 .conteiner-reviews {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .card {

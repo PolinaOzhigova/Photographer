@@ -75,18 +75,18 @@ nav .icon {
     cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
-width: 35px;
-height: 5px;
-background-color: #0253fa;
-margin: 6px 0;
-transition: 0.4s;
+    width: 35px;
+    height: 5px;
+    background-color: #0253fa;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 .change .bar1 {
-transform: translate(0, 11px) rotate(-45deg);
+    transform: translate(0, 11px) rotate(-45deg);
 }
 .change .bar2 {opacity: 0;}
 .change .bar3 {
-transform: translate(0, -11px) rotate(45deg);
+    transform: translate(0, -11px) rotate(45deg);
 }
 
 /* Стилизация разделов */
@@ -141,10 +141,11 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
 }
 
 .card {
-    max-width: 48%;
+    max-width: 45%;
     margin-bottom: 50px;
     display: flex;
     align-items: center;
@@ -159,6 +160,70 @@ img{
 .card p {
     flex: 1;
     margin-left: 10px;
+}
+
+/* Стилизация списка услуг */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+li {
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 10px;
+    width: 310px;
+    border: 1px solid #0253fa;
+    box-shadow: 12px 12px #0253fa;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+li h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+li p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+}
+.do_it{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.money{
+    margin-top: 15px;
+    font-size: 17px;
+    font-style: italic;
+}
+.do_it a{
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    padding: 10px;
+    margin-left: 7px;
+    max-height: 37px;
+    border: 1px solid #0253fa;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0253fa;
+    text-transform: uppercase;
+    letter-spacing: 0.30em;
+}
+.do_it a:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
 }
 
 /* Стилизация футера */
@@ -208,25 +273,14 @@ dd {
     margin-bottom: 15px;
 }
 
-/* Стилизация списка услуг */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 20px;
-}
-
-/* Стилизация заголовков услуг */
-li h3 {
-    font-size: 18px;
-    font-weight: lighter;
-}
-
-
 
 /*MEDIA*/
+@media screen and (width < 1050px) {
+    .card {
+        max-width: 48%;
+    }
+}
+
 @media screen and (width < 950px) {
     .conteiner { grid-template-columns: repeat(2, 1fr); }
     
@@ -237,7 +291,7 @@ li h3 {
         max-width: 450px;
     }
 
-  }
+}
 
 @media screen and (width < 700px) {
     .conteiner { grid-template-columns: repeat(1, 1fr); }

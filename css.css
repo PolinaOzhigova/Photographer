@@ -247,6 +247,18 @@ footer a{
 }
 
 /* Стилизация списка контактов */
+.cont-div{
+    background-color: #fff;
+    box-shadow: 12px 12px #0253fa;
+    max-width: 450px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.cont-div h2{
+    color: #000;
+}
+
 dl {
     display: block;
     margin-left: auto;
@@ -254,7 +266,6 @@ dl {
     max-width: 350px;
     padding: 5px;
 }
-
 dt a{
     color: #0253fa;
     font-weight: lighter;
@@ -268,7 +279,7 @@ dt a:hover{
 }
 
 dd {
-    color: #cbcbcb;
+    color: #000000;
     margin-top: 3px;
     margin-bottom: 15px;
 }

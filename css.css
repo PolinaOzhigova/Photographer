@@ -168,17 +168,26 @@ ul {
     margin: 0;
     padding: 0;
     margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
-li {
+li{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+}
+
+.li {
     margin: 0;
     padding: 10px;
     padding-bottom: 10px;
-    width: 310px;
+    width: 330px;
+    height: 240px;
+    
     border: 1px solid #0253fa;
     box-shadow: 12px 12px #0253fa;
     display: flex;
@@ -186,12 +195,12 @@ li {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-li h3 {
+.li h3 {
     font-size: 18px;
     font-weight: lighter;
     margin-bottom: 20px;
 }
-li p{
+.li p{
     margin: 0;
     padding: 0;
     text-align: center;
@@ -253,7 +262,7 @@ footer a{
     max-width: 450px;
     padding: 20px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .cont-div h2{
     color: #000;
@@ -290,11 +299,13 @@ dd {
     .card {
         max-width: 48%;
     }
+    
+    ul {grid-template-columns: repeat(2, 1fr); }
 }
 
 @media all and (width < 950px) {
     .conteiner { grid-template-columns: repeat(2, 1fr); }
-    
+
     .card {
         max-width: 100%;
     }
@@ -306,6 +317,8 @@ dd {
 
 @media all and (width < 700px) {
     .conteiner { grid-template-columns: repeat(1, 1fr); }
+
+    ul {grid-template-columns: repeat(1, 1fr); }
 
     body{
         margin: 0;

@@ -286,13 +286,13 @@ dd {
 
 
 /*MEDIA*/
-@media screen and (width < 1050px) {
+@media all and (width < 1050px) {
     .card {
         max-width: 48%;
     }
 }
 
-@media screen and (width < 950px) {
+@media all and (width < 950px) {
     .conteiner { grid-template-columns: repeat(2, 1fr); }
     
     .card {
@@ -304,7 +304,7 @@ dd {
 
 }
 
-@media screen and (width < 700px) {
+@media all and (width < 700px) {
     .conteiner { grid-template-columns: repeat(1, 1fr); }
 
     body{
@@ -342,7 +342,7 @@ dd {
 
 }
 
-@media screen and (width < 550px) {
+@media all and (width < 550px) {
     .card{
         display: inline;
     }

@@ -6,6 +6,7 @@
     <meta name="keywords" content="фото, фотограф, Иркутск, Полина Ожигова">
     <meta name="description" content="Официальный сайт фотографа Ожиговой Полины">
     <link rel="stylesheet" href="css.css">
+    <script src="script.js"></script>
     <title>Фотограф Ожигова Полина</title>
 </head>
 <body>
@@ -39,15 +40,15 @@
             <article>
                 <h3>Мои работы</h3>
                 <div class="conteiner">
-                <div class="item"><img src="images/1.jpg" alt="репортаж"></div>
-                <div class="item"><img src="images/2.jpg" alt="портрет"></div>
-                <div class="item"><img src="images/3.jpg" alt="портрет"></div>
-                <div class="item"><img src="images/4.jpg" alt="индивидуальное фото"></div>
-                <div class="item"><img src="images/5.jpg" alt="портрет"></div>
-                <div class="item"><img src="images/6.jpg" alt="портрет"></div>
-                <div class="item v"><img src="images/7.jpg" alt="портрет"></div>
-                <div class="item v"><img src="images/8.jpg" alt="портрет"></div>
-                <div class="item v"><img src="images/9.jpg" alt="индивидуальное фото"></div>
+                <div class="item"><img class="asyncImage" src="images/1.jpg" alt="репортаж"></div>
+                <div class="item"><img class="asyncImage" src="images/2.jpg" alt="портрет"></div>
+                <div class="item"><img class="asyncImage" src="images/3.jpg" alt="портрет"></div>
+                <div class="item"><img class="asyncImage" src="images/4.jpg" alt="индивидуальное фото"></div>
+                <div class="item"><img class="asyncImage" src="images/5.jpg" alt="портрет"></div>
+                <div class="item"><img class="asyncImage" src="images/6.jpg" alt="портрет"></div>
+                <div class="item v"><img class="asyncImage" src="images/7.jpg" alt="портрет"></div>
+                <div class="item v"><img class="asyncImage" src="images/8.jpg" alt="портрет"></div>
+                <div class="item v"><img class="asyncImage" src="images/9.jpg" alt="индивидуальное фото"></div>
             </div>
             </article>
             
@@ -128,17 +129,5 @@
         <a href="https://vk.com/polina.ozhigova">https://vk.com/polina.ozhigova</a>
         <p>vk</p>
     </footer>
-
-    <script>
-        function myFunction(y) {
-            var x = document.getElementById("myNav");
-            if (x.className === "class-myNav") {
-                x.className += " responsive";
-            } else {
-                x.className = "class-myNav";
-            }
-            y.classList.toggle("change");
-        } 
-        </script>
 </body>
 </html>

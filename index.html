@@ -10,11 +10,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div><a href="#myWork">Портфолио</a></div>
-            <div><a href="#reviews">Отзывы</a></div>
-            <div><a href="#services">Услуги</a></div>
-            <div><a href="#contact">Связаться со мной</a></div>
+        <nav class="class-myNav" id="myNav">
+            <a href="#myWork">Портфолио</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#services">Услуги</a>
+            <a href="#contact">Связаться со мной</a>
+            <a href="javascript:void(0);" class="icon">
+                <div class="container-nav" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div> 
+            </a>
         </nav>
     </header>
     <main>
@@ -30,7 +37,7 @@
                 </div>
             </div>
             <article>
-                <h3>Примеры моих работ</h3>
+                <h3>Мои работы</h3>
                 <div class="conteiner">
                 <div class="item"><img src="images/1.jpg" alt="репортаж"></div>
                 <div class="item"><img src="images/2.jpg" alt="портрет"></div>
@@ -105,7 +112,7 @@
 
         <section id="contact">
             <h3>Связаться со мной</h3>
-            <dl>
+            <dl class="cont">
                 <dt><a href="https://vk.com/polina.ozhigova">https://vk.com/polina.ozhigova</a></dt>
                 <dd>vk</dd>
                 <dt><a href="https://t.me/polinaOzh">https://t.me/polinaOzh</a></dt>
@@ -117,15 +124,21 @@
 
     </main>
     <footer>
-        <h3>По вопросам обращаться:</h3>
-        <dl>
-            <dt><a href="https://vk.com/polina.ozhigova">https://vk.com/polina.ozhigova</a></dt>
-            <dd>vk</dd>
-            <dt><a href="https://t.me/polinaOzh">https://t.me/polinaOzh</a></dt>
-            <dd>телеграм</dd>
-            <dt><a href="https://vk.com/your_gorgeous_photo">https://vk.com/your_gorgeous_photo</a></dt>
-            <dd>актуальная информация о групповых фототурах</dd>
-        </dl>
+        <h3 class="foo-h3">По вопросам обращаться:</h3>
+        <a href="https://vk.com/polina.ozhigova">https://vk.com/polina.ozhigova</a>
+        <p>vk</p>
     </footer>
+
+    <script>
+        function myFunction(y) {
+            var x = document.getElementById("myNav");
+            if (x.className === "class-myNav") {
+                x.className += " responsive";
+            } else {
+                x.className = "class-myNav";
+            }
+            y.classList.toggle("change");
+        } 
+        </script>
 </body>
 </html>

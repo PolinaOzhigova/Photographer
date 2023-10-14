@@ -135,6 +135,7 @@ img{
     display: grid;
     grid-template-columns: repeat(3, 300px);
     justify-content: center;
+    justify-items: center;
     gap: 50px;
 }
 .item{
@@ -373,4 +374,11 @@ dd {
         height: 225px;
         box-shadow: 8px 8px #ffffff;
     }
+    .cont-div{
+        background-color: #fff;
+        max-width: 340px;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
 }

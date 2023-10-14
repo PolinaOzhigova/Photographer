@@ -4,7 +4,7 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 /* Стилизация текста */
 h1, h2, h3 {
@@ -35,7 +35,7 @@ a {
 header {
     background-color:  rgb(19, 25, 36);
     color: #0253fa;
-    padding: 10px;
+    padding: 10px 0 10px;
     text-align: center;
     
     position: fixed;
@@ -67,6 +67,7 @@ nav a:hover{
 
 nav .icon {
     display: none;
+    padding-right: 10px;
 }
 
 /*анимация закрытия нав бара*/
@@ -89,12 +90,6 @@ nav .icon {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-/* Стилизация разделов */
-section {
-    padding: 20px;
-    margin: 20px 0;
-}
-
 /* Стилизация блоков обо мне*/
 .presentation{
     display: flex;
@@ -106,7 +101,7 @@ section {
 .present-small{
     border: 1px solid #0253fa;
     box-shadow: 12px 12px #0253fa;
-    width: 400px;
+    max-width: 400px;
 }
 .present-small h3, p{
     text-align: left;
@@ -116,12 +111,13 @@ section {
 /* Стилизация изображений*/
 img{
    /* box-shadow: 12px 12px #0253fa;*/
-   width: 300px;
+   max-width: 300px;
+   transition: all 0.3s ease-in-out;
    margin: 10px;
 }
 .card img{
     box-shadow: 12px 12px #ffffff;
-    width: 235px;
+    max-width: 235px;
 }
 
 /* Стилизация примеров работ*/
@@ -156,8 +152,8 @@ img{
 }
 
 .card img {
-    width: 200px;
-    height: 300px;
+    max-width: 200px;
+    max-height: 300px;
     border-radius: 100px;
     margin-bottom: 20px;
 }
@@ -324,13 +320,8 @@ dd {
         margin: 0;
     }
     header{
-        padding: 10px;
         position: relative;
         background-color:  rgb(13, 17, 26);
-    }
-    section{
-        padding: 5px;
-        margin: 10px;
     }
     nav {
         display: block;

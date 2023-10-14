@@ -6,13 +6,24 @@ body {
     padding: 0;
     margin-top: 50px;
 }
+section{
+    margin-bottom: 100px;
+}
+#contact{
+    margin-top: 150px;
+}
+
 /* Стилизация текста */
 h1, h2, h3 {
     color: #ffffff;
     text-transform: uppercase;
     padding: 5px;
-    margin: 10px;
+    margin: 10px 0 15px;
     text-align: center;
+}
+.photos-h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .present-small h3, h2{
     padding: 15px;
@@ -113,7 +124,6 @@ img{
    /* box-shadow: 12px 12px #0253fa;*/
    max-width: 300px;
    transition: all 0.3s ease-in-out;
-   margin: 10px;
 }
 .card img{
     box-shadow: 12px 12px #ffffff;
@@ -123,8 +133,12 @@ img{
 /* Стилизация примеров работ*/
 .conteiner{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 50px;
+}
+.item{
+    max-width: 300px;
 }
 .item img{
     display: block;
@@ -134,6 +148,7 @@ img{
 
 /* Стилизация блока с отзывами*/
 .conteiner-reviews {
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -142,7 +157,6 @@ img{
 
 .card {
     max-width: 550px;
-    margin-bottom: 50px;
     display: flex;
     align-items: center;
     border-bottom: 3px solid #ffffff;
@@ -155,7 +169,8 @@ img{
     max-width: 200px;
     max-height: 300px;
     border-radius: 100px;
-    margin-bottom: 20px;
+    margin: 15px;
+    margin-bottom: 23px;
 }
 
 /* Стилизация списка услуг */

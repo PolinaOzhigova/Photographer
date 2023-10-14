@@ -25,6 +25,9 @@ h1, h2, h3 {
     padding-top: 30px;
     padding-bottom: 10px;
 }
+.present-small{
+    margin-right: 12px;
+}
 .present-small h3, h2{
     padding: 15px;
 }

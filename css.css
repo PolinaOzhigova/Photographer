@@ -310,7 +310,7 @@ dd {
 
 
 /*MEDIA*/
-@media all and (width < 1050px) {
+@media only screen and (max-width: 1050px) {
     .card {
         max-width: 48%;
     }
@@ -318,7 +318,7 @@ dd {
     ul {grid-template-columns: repeat(2, 1fr); }
 }
 
-@media all and (width < 950px) {
+@media only screen and (max-width: 950px) {
     .conteiner { grid-template-columns: repeat(2, 1fr); }
 
     .card {
@@ -330,7 +330,7 @@ dd {
 
 }
 
-@media all and (width < 700px) {
+@media only screen and (max-width: 768px) {
     .conteiner { grid-template-columns: repeat(1, 1fr); }
 
     ul {grid-template-columns: repeat(1, 1fr);}
@@ -365,7 +365,7 @@ dd {
 
 }
 
-@media all and (width < 550px) {
+@media only screen and (max-width: 550px) {
     .img{
         max-width: 250;
     }
@@ -396,7 +396,7 @@ dd {
     }
 
 }
-@media all and (width < 370px) {
+@media only screen and (max-width: 370px) {
     .item img{
         width: 250px;
     }
